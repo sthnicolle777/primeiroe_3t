@@ -1,1 +1,7 @@
-# primeiroe_3t
+# Terceiro Trimestre 
+
+## Identificação
+Esthefany Nicolle - N 09
+
+## Conteudo 
+HTML, CSS e JavaScript
