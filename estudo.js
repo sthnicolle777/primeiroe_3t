@@ -30,10 +30,14 @@ function quadrado(){
     }
 }
 
+function moeda(atual){
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+}
+
 function calcula(){
     let val = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
-    let t = document.getElementById("meses").value;
+    let t = document.getElemeantById("meses").value;
     if(!Number(val)){
         alert("O valor deve ser um número.");
         document.getElementById("valor").value = "";
@@ -87,3 +91,6 @@ function fecharNotas(){
     r = 180 - r;
     document.getElementById("resultadofechar").innerHTML = "Falta: " + r;
 }
+
+document.getElementById("total").innerHTML= "Total: " + moeda(res);
+//document.write(Resultado: "+moeda(res))
